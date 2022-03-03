@@ -28,6 +28,7 @@ class CashupTicketBuilder extends AbstractTicketBuilder
 
         $this->printer->lineSplitter('=');
         $this->printer->text($this->company->nombrecorto, true, true);
+        $this->printer->text($this->company->nombre, true, true);
         $this->printer->bigText($this->company->direccion, true, true);
 
         if ($this->company->telefono1) {
